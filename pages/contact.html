@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Request CV — Lindokuhle Ndlala</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container">
+    <a href="../index.html" class="nav-logo">Lindo<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html" class="nav-cta active">Request CV</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<main>
+  <section class="section" style="padding-top: calc(var(--nav-h) + 56px);">
+    <div class="container">
+      <p class="section-label">Get in touch</p>
+      <h1 class="section-title">Request My CV</h1>
+
+      <div class="contact-grid">
+
+        <!-- Left info -->
+        <div class="contact-info">
+          <p style="color:var(--ink-muted); margin-bottom:32px;">
+            Interested in working together or want to learn more about my background? 
+            Fill in the form and I'll send my full CV directly to your inbox.
+          </p>
+
+          <div class="contact-links">
+            <a href="mailto:lindokuhle.ndlala@email.com" class="contact-link">
+              <div class="contact-link-icon">✉️</div>
+              <div>
+                <div style="font-weight:600; font-size:0.9rem;">Email</div>
+                <div style="color:var(--ink-muted); font-size:0.82rem;">lindokuhlendlala@email.com</div>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/lindokuhle-ndlala" target="_blank" class="contact-link">
+              <div class="contact-link-icon">💼</div>
+              <div>
+                <div style="font-weight:600; font-size:0.9rem;">LinkedIn</div>
+                <div style="color:var(--ink-muted); font-size:0.82rem;">linkedin.com/in/lindokuhle-ndlala</div>
+              </div>
+            </a>
+            <a href="https://github.com/lindokuhle-ndlala" target="_blank" class="contact-link">
+              <div class="contact-link-icon">🐙</div>
+              <div>
+                <div style="font-weight:600; font-size:0.9rem;">GitHub</div>
+                <div style="color:var(--ink-muted); font-size:0.82rem;">github.com/lindo200</div>
+              </div>
+            </a>
+            <div class="contact-link">
+              <div class="contact-link-icon">📍</div>
+              <div>
+                <div style="font-weight:600; font-size:0.9rem;">Location</div>
+                <div style="color:var(--ink-muted); font-size:0.82rem;">Johannesburg, Gauteng, South Africa</div>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top:40px; padding:20px; background:var(--accent-light); border-radius:10px;">
+            <p style="font-size:0.85rem; color:var(--accent); font-weight:500;">
+              🟢 Currently available for IT learnerships and junior developer roles in Gauteng.
+            </p>
+          </div>
+        </div>
+
+        <!-- CV Request Form -->
+        <div class="cv-form">
+          <h3>CV Request Form</h3>
+          <p>Fill in your details below and I'll email you my CV.</p>
+
+          <form id="cv-form">
+            <div class="form-group">
+              <label for="req-name">Your Name *</label>
+              <input type="text" id="req-name" placeholder="e.g. Thabo Nkosi" required />
+            </div>
+            <div class="form-group">
+              <label for="req-company">Company / Organisation *</label>
+              <input type="text" id="req-company" placeholder="e.g. TechCorp SA" required />
+            </div>
+            <div class="form-group">
+              <label for="req-email">Your Email *</label>
+              <input type="email" id="req-email" placeholder="e.g. thabo@techcorp.co.za" required />
+            </div>
+            <div class="form-group">
+              <label for="req-reason">Reason for Request *</label>
+              <select id="req-reason" required>
+                <option value="" disabled selected>Select a reason</option>
+                <option value="IT Learnership">IT Learnership</option>
+                <option value="Junior Developer Role">Junior Developer Role</option>
+                <option value="Internship">Internship</option>
+                <option value="Graduate Programme">Graduate Programme</option>
+                <option value="General Enquiry">General Enquiry</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="req-message">Message (optional)</label>
+              <textarea id="req-message" placeholder="Tell me a little about the opportunity or your company..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">
+              📧 Send Request
+            </button>
+          </form>
+
+          <!-- Success state -->
+          <div id="form-success" class="form-success">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="22" stroke="currentColor" stroke-width="2"/>
+              <path d="M14 24l7 7 13-14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <h3 style="font-family:var(--serif); margin-bottom:8px;">Request Sent!</h3>
+            <p style="color:var(--ink-muted); font-size:0.9rem;">Your email client should have opened. I'll get back to you shortly.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p>© 2026 Lindokuhle Ndlala · Built with HTML, CSS & JavaScript</p>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
