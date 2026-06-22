@@ -59,7 +59,7 @@ if (form) {
       `Hi Lindokuhle,\n\nMy name is ${name} from ${company}.\nI am requesting your CV for: ${reason}.\n\n${message}\n\nKind regards,\n${name}\n${email}`
     );
 
-    window.location.href = `mailto:lindokuhle.ndlala@email.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:lindokuhlendlala@email.com?subject=${subject}&body=${body}`;
 
     form.style.display = 'none';
     document.getElementById('form-success').style.display = 'block';
